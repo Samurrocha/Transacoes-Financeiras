@@ -1,0 +1,32 @@
+<div>
+  <h2>Listagem de Transações</h2>
+  <label for="type">Filtrar por tipo:</label>
+  <select id="type" [(ngModel)]="selectedType" (change)="filterTransactions()">
+    <option value="Todos">Todos</option>
+    <option value="Receita">Receita</option>
+    <option value="Despesa">Despesa</option>
+  </select>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Category</th>
+        <th>Date</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let transaction of transactions">
+        <td>{{ transaction.id }}</td>
+        <td>{{ transaction.type }}</td>
+        <td>{{ transaction.valor }}</td>
+        <td>{{ transaction.categoria}}</td>
+        <td>{{ transaction.data | date }}</td>
+        <td>{{ transaction.description }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

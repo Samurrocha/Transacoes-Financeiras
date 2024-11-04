@@ -1,0 +1,18 @@
+<!-- delete-transaction.component.html -->
+<h2>Excluir Transação</h2>
+
+<div *ngIf="transactions.length === 0">Nenhuma transação cadastrada.</div>
+
+<ul>
+  <li *ngFor="let transaction of transactions">
+    {{ transaction.description }} - {{ transaction.amount }}
+    
+    <button (click)="selectedTransactionId = transaction.id">Selecionar para excluir</button>
+  </li>
+</ul>
+
+<div *ngIf="selectedTransactionId" class="selected-transaction-warning">
+  <p>Você tem certeza que deseja excluir esta transação?</p>
+  <button (click)="deleteTransaction()">Confirmar Exclusão</button>
+  <button (click)="selectedTransactionId = null">Cancelar</button>
+</div>

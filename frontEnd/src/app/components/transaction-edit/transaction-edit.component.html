@@ -1,0 +1,27 @@
+<p>transaction-edit works!</p>
+
+
+<h2>Edição de Transação</h2>
+<form [formGroup]="transactionForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="type">Type:</label>
+    <input id="type" formControlName="type" required />
+  </div>
+  <div>
+    <label for="description">Descrição:</label>
+    <input id="description" formControlName="description" required />
+  </div>
+  <div>
+    <label for="amount">Valor:</label>
+    <input id="amount" type="number" formControlName="amount" required />
+  </div>
+  <div>
+    <label for="category">Categoria:</label>
+    <input id="category" formControlName="category" required />
+  </div>
+  <div>
+    <label for="date">Data:</label>
+    <input id="date" type="date" formControlName="date" required />
+  </div>
+  <button type="submit">Salvar</button>
+</form>

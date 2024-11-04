@@ -1,0 +1,31 @@
+ Desconsiderar arquivos do sistema operacional
+/tmp
+/temp
+
+# Desconsiderar arquivos gerados
+*.swp
+*~
+target/
+dist/
+build/
+*.log
+*.class
+*.jar
+*.war
+*.iml
+*.md
+.vscode/
+
+# Desconsiderar arquivos de cache
+npm-cache/
+.m2
+
+# Desconsiderar arquivos de ambiente
+.env
+.env.local
+local.properties
+application-local.properties
+
+# Desconsiderar dependências
+node_modules/
+mvnw

@@ -1,0 +1,50 @@
+/* delete-transaction.component.css */
+
+h2 {
+    color: #e63946; /* Cor para o título */
+    text-align: center;
+  }
+  
+  div {
+    margin: 20px;
+  }
+  
+  ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding */
+  }
+  
+  li {
+    background: #f1faee; /* Fundo claro para os itens da lista */
+    border: 1px solid #a8dadc; /* Borda em torno dos itens */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+    display: flex; /* Flexbox para alinhar conteúdo */
+    justify-content: space-between; /* Espaça o conteúdo */
+    align-items: center; /* Alinha verticalmente no centro */
+  }
+  
+  button {
+    background: #457b9d; /* Cor de fundo para os botões */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove bordas do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 8px 12px; /* Espaçamento interno do botão */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    transition: background 0.3s; /* Transição suave para a cor do fundo */
+  }
+  
+  button:hover {
+    background: #1d3557; /* Cor mais escura ao passar o mouse */
+  }
+  
+  .selected-transaction-warning {
+    background-color: #ffcccb; /* Cor de fundo para a mensagem de exclusão */
+    border: 1px solid #ff6f61; /* Borda para a mensagem de exclusão */
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto */
+  }
+  

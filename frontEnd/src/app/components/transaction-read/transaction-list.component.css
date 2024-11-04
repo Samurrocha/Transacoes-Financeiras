@@ -1,0 +1,67 @@
+/* Estilos gerais para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Estilo para a div que contém a listagem */
+  div {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para o título */
+  h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para o rótulo do filtro */
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  /* Estilo para o select */
+  select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para a tabela */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  /* Estilo para o cabeçalho da tabela */
+  thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Estilo para as células da tabela */
+  th, td {
+    padding: 10px;
+    border: 1px solid #000000;
+    text-align: center;
+  }
+  
+  /* Estilo para as linhas da tabela ao passar o mouse */
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Estilo para o corpo da tabela */
+  tbody {
+    background-color: #ffffff;
+  }
+  
